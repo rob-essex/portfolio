@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>First4Aid Reflections</title>
+</head><center>
+<h5>Secure Software Development, Unit 11</h5>
+<h1>Reflection: Changes between First4Aid’s Design Document and Final Coding Output</h1></center>
+<body>
+
+<p>As is often the case, designs are often ambitious because it’s easier to write or draw a feature than it is to implement. Our application – First4Aid – was no exception! However, I do believe that we ultimately stayed true to our design and intended functionality. We implemented 256-bit encryption, built our microservice architecture in Docker, and used role-base access for types of users as well as specific users.</p>
+<p>Once we began development, we realised that trying to leverage both Flask and Django frameworks would have unnecessarily complicated our design. Since more team members were familiar with Flask, we opted for that framework. This allowed for significantly faster development, and better testing since we could focus on a single framework.</p>
+<p>Similarly, depicting the data structure in an entity relationship diagram was much easier than determining some of the nuance upon implementation. Figuring out how best to build the relationships and backward populated fields in SQLAlchemy required extensive trial and error, and ultimately, warranted a redesign of our User, Requestor, Provider, and Admin classes (and thus, their tables). Because the Login-Manager module only allowed us to use a single class to manage authentication and session information, we shifted from using separate classes to define roles and implemented a “role” attribute to the User class. This allowed us to properly configure the data object models. From there, updating our routes to check the User.role attribute was easy.
+<p></p>For submission, we had to deactivate our multi-factor authentication feature after malfunctions with the Twilio API. We had it functioning – but unfortunately, shortly before our deadline, the service would fail to send an authorisation code which prevented users from logging in.</p>
+<p>I am very proud of the effort from our team, the project we submitted, and how much I learned from this experience!</p><br>
+
+
+	
+</body>
+</html>
