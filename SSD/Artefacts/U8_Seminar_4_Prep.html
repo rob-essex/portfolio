@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Seminar 4 Preparation</title>
+</head><center>
+<h5>Secure Software Development, Unit 8</h5>
+<h1>Seminar 4 Preparation</h1></center>
+<body>
+
+<p>I used PyJWT in conjunction with the HS256 algorithm to create a password reset token, which we have incorporated into our First4Aid application. The code follows below.</p>
+	
+<center><a href="../Artefacts/Encryption_Program.png"><img src="Encryption_Program.png" width = "50%" height="50%" target="_blank" alt="Encryption Program Code"/></a></center>
+
+<h3>Why did you select the algorithm you chose?</h3>
+<p>HS256 is a symmetric encryption algorithm known for its speed and efficiency, whilst simultaneously providing ample security through the SHA-256 hash algorithm (Johnson, 2022).</p>
+<h3>Would it meet the GDPR regulations? Justify your answer.</h3>
+<p>HS256 satisfies GDPR requirements based on the fact that GDPR Chapter 4, Section 2, Article 32 does prescribe specific standards for encryption – only that personal data must be encrypted, and that system owners must assess the appropriate level of security proportional to the risks of data compromise (European Union, 2016; Proton AG, 2019).</p><br>
+	
+<h4>References</h4>
+	
+<p>European Union. (2016). Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). [online] Available at: https://eur-lex.europa.eu/eli/reg/2016/679/2016-05-04. [Accessed 12 Aug. 2022].</p>
+<p>Proton AG. (2019). GDPR compliance checklist - GDPR.eu. [online] Available at: https://gdpr.eu/checklist/. [Accessed 12 Aug. 2022].</p>
+<p>Johnson, W. (2022). RS256 vs HS256 What’s the difference? [online] Available at: https://auth0.com/blog/rs256-vs-hs256-whats-the-difference/ [Accessed 12 Aug. 2022].</p>
+
+
+</body>
+</html>
